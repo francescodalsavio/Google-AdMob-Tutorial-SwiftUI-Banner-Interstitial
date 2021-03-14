@@ -3,23 +3,31 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C70FBA06518375D87FB03952 /* Pods_Google_AdMob_Tutorial.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD24DC0DB131BFF22FA2118D /* Pods_Google_AdMob_Tutorial.framework */; };
 		DC89A31B25FE23410028856A /* Google_AdMob_TutorialApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC89A31A25FE23410028856A /* Google_AdMob_TutorialApp.swift */; };
 		DC89A31D25FE23410028856A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC89A31C25FE23410028856A /* ContentView.swift */; };
 		DC89A31F25FE23440028856A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC89A31E25FE23440028856A /* Assets.xcassets */; };
 		DC89A32225FE23440028856A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC89A32125FE23440028856A /* Preview Assets.xcassets */; };
+		DC89A33425FE27880028856A /* BannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC89A33325FE27880028856A /* BannerView.swift */; };
+		DC89A33825FE27DA0028856A /* InterstitialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC89A33725FE27DA0028856A /* InterstitialView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		31F52D32C1239C76056D4637 /* Pods-Google AdMob Tutorial.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Google AdMob Tutorial.debug.xcconfig"; path = "Target Support Files/Pods-Google AdMob Tutorial/Pods-Google AdMob Tutorial.debug.xcconfig"; sourceTree = "<group>"; };
+		53E4F61BB380CA5D647BB2EE /* Pods-Google AdMob Tutorial.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Google AdMob Tutorial.release.xcconfig"; path = "Target Support Files/Pods-Google AdMob Tutorial/Pods-Google AdMob Tutorial.release.xcconfig"; sourceTree = "<group>"; };
 		DC89A31725FE23410028856A /* Google AdMob Tutorial.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Google AdMob Tutorial.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC89A31A25FE23410028856A /* Google_AdMob_TutorialApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Google_AdMob_TutorialApp.swift; sourceTree = "<group>"; };
 		DC89A31C25FE23410028856A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		DC89A31E25FE23440028856A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DC89A32125FE23440028856A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		DC89A32325FE23440028856A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DC89A33325FE27880028856A /* BannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannerView.swift; sourceTree = "<group>"; };
+		DC89A33725FE27DA0028856A /* InterstitialView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterstitialView.swift; sourceTree = "<group>"; };
+		DD24DC0DB131BFF22FA2118D /* Pods_Google_AdMob_Tutorial.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Google_AdMob_Tutorial.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -27,17 +35,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C70FBA06518375D87FB03952 /* Pods_Google_AdMob_Tutorial.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		834FADFBFE8CD8CAFE84625A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				31F52D32C1239C76056D4637 /* Pods-Google AdMob Tutorial.debug.xcconfig */,
+				53E4F61BB380CA5D647BB2EE /* Pods-Google AdMob Tutorial.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		8FC8CFD12E4D9E2163CF3727 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DD24DC0DB131BFF22FA2118D /* Pods_Google_AdMob_Tutorial.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		DC89A30E25FE23410028856A = {
 			isa = PBXGroup;
 			children = (
 				DC89A31925FE23410028856A /* Google AdMob Tutorial */,
 				DC89A31825FE23410028856A /* Products */,
+				834FADFBFE8CD8CAFE84625A /* Pods */,
+				8FC8CFD12E4D9E2163CF3727 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -52,6 +80,7 @@
 		DC89A31925FE23410028856A /* Google AdMob Tutorial */ = {
 			isa = PBXGroup;
 			children = (
+				DC89A33225FE27770028856A /* Ads View */,
 				DC89A31A25FE23410028856A /* Google_AdMob_TutorialApp.swift */,
 				DC89A31C25FE23410028856A /* ContentView.swift */,
 				DC89A31E25FE23440028856A /* Assets.xcassets */,
@@ -69,6 +98,15 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		DC89A33225FE27770028856A /* Ads View */ = {
+			isa = PBXGroup;
+			children = (
+				DC89A33325FE27880028856A /* BannerView.swift */,
+				DC89A33725FE27DA0028856A /* InterstitialView.swift */,
+			);
+			path = "Ads View";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -76,9 +114,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DC89A32625FE23440028856A /* Build configuration list for PBXNativeTarget "Google AdMob Tutorial" */;
 			buildPhases = (
+				3C62A055D78123A881023BC1 /* [CP] Check Pods Manifest.lock */,
 				DC89A31325FE23410028856A /* Sources */,
 				DC89A31425FE23410028856A /* Frameworks */,
 				DC89A31525FE23410028856A /* Resources */,
+				2E491A69F5A8603D17C99E57 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -133,13 +173,57 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2E491A69F5A8603D17C99E57 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Google AdMob Tutorial/Pods-Google AdMob Tutorial-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Google AdMob Tutorial/Pods-Google AdMob Tutorial-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Google AdMob Tutorial/Pods-Google AdMob Tutorial-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3C62A055D78123A881023BC1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Google AdMob Tutorial-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		DC89A31325FE23410028856A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DC89A33825FE27DA0028856A /* InterstitialView.swift in Sources */,
 				DC89A31D25FE23410028856A /* ContentView.swift in Sources */,
 				DC89A31B25FE23410028856A /* Google_AdMob_TutorialApp.swift in Sources */,
+				DC89A33425FE27880028856A /* BannerView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -264,6 +348,7 @@
 		};
 		DC89A32725FE23440028856A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 31F52D32C1239C76056D4637 /* Pods-Google AdMob Tutorial.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -286,6 +371,7 @@
 		};
 		DC89A32825FE23440028856A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 53E4F61BB380CA5D647BB2EE /* Pods-Google AdMob Tutorial.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

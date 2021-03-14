@@ -6,11 +6,34 @@
 //
 
 import SwiftUI
+import GoogleMobileAds
 
 struct ContentView: View {
+    private var fullScreenAd: Interstitial?
+    init() {
+        fullScreenAd = Interstitial()
+    }
+    
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+
+        NavigationView {
+
+            Form {
+                Button("test", action: {
+                    self.fullScreenAd?.showAd()
+                })
+                
+                //Banner
+                HStack {
+                    Spacer()
+                    GADBannerViewController()
+                        .frame(width: kGADAdSizeBanner.size.width, height: kGADAdSizeBanner.size.height)
+                    Spacer()
+                }
+            }
+            .navigationBarTitle("Ad Test")
+        }
+        
     }
 }
 
