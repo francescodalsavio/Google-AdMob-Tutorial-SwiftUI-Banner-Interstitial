@@ -1,5 +1,4 @@
 # Google-AdMob-Tutorial-SwiftUI-Banner-Interstitial
 
-Before running this app install this pod:
+Before running this app Run $ pod install in your project directory.
 
-pod 'Google-Mobile-Ads-SDK'
