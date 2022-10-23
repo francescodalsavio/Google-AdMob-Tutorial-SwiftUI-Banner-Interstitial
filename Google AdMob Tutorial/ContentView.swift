@@ -27,7 +27,7 @@ struct ContentView: View {
                 HStack {
                     Spacer()
                     GADBannerViewController()
-                        .frame(width: kGADAdSizeBanner.size.width, height: kGADAdSizeBanner.size.height)
+                        .frame(width: GADAdSizeBanner.size.width, height: GADAdSizeBanner.size.height)
                     Spacer()
                 }
             }
